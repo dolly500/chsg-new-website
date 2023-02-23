@@ -1,0 +1,41 @@
+.service__image{
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #1E212D;
+    color: white;
+}
+
+.service-image-logo{
+    background-color:  #093042;
+    text-align: left;
+    margin: 10px auto;
+    width: 30vh;
+    color: white;
+    
+}
+
+.service-user-form{
+    display: flex;
+    text-align: left;
+    color: white;
+    align-items: left;
+    flex-direction: column;
+}
+
+.service-users{
+    padding: 13px;
+}
+
+@media screen and (min-width: 800px) {
+    .service__image{
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 50px;
+        padding: 30px;
+    }
+    .service-image-logo{
+        height: 90%;
+        color: white;
+    }
+}
+

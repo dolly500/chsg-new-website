@@ -1,0 +1,36 @@
+.users_details{
+    margin: 25px 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-duration: 4s;
+}
+
+.user-logo{
+    background-color:  #cdd9df;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+    padding: 7px;
+    
+}
+
+.logo_svg{
+    font-size: 50px;
+    padding: 8px;
+    color: white;
+}
+
+.user-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+    .users_details{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

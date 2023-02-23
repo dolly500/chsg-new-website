@@ -1,0 +1,23 @@
+.section-pager{
+    display: grid;
+    grid-template-columns: 1fr;
+    color: black;
+    padding: 20px;
+}
+
+.section-pager .text-3{
+    color: #808080;
+}
+
+.section-pager .head-1{
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width: 800px) {
+    .section-pager{
+            display: flex;
+            margin: auto 0;
+            justify-content: space-around;
+            align-items: center;      
+    }
+}

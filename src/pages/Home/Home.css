@@ -1,0 +1,53 @@
+.main__header{
+    display: grid;
+    grid-template-columns: 1fr;
+    background: url('../../img/image\ 314.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.main__header .container{
+    margin-top: 100px;
+}
+
+.main__header .main__header-left{
+    margin: 30px 30px;
+    padding: 10px;
+}
+
+.main__header .main__header-left button{
+    padding: 13px;
+    margin: 20px 0;
+    font-weight: bolder;
+    font-size: medium;
+    color: white;
+    background-color: #30A7DF;
+}
+
+.main__header .main__header-left img{
+    height: 100%;
+    width: 100%;    
+}
+
+@media screen and (min-width: 800px) {
+    .main__header .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 90px 40px;
+    }
+}
+
+.main__header {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+    }
+  }
+  

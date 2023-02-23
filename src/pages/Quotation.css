@@ -1,0 +1,51 @@
+.quotation-text{
+    display: grid;
+    grid-template-columns: 1fr;
+    color: black;
+    padding: 30px;
+    align-items: center;
+    margin-top: -2.5rem;
+    height: 230px;
+    background-image: url('../img/image\ 315.png');
+}
+
+.quotation-text h3{
+    color: white;
+    text-align: center;
+}
+
+.quotation-btn button{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 800px){
+    .quotation-text{
+        margin-top: -3.15rem;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quotation-text h3{
+        font-size: 33px;
+    }
+    
+    .quotation-btn{
+        align-items: center;
+        justify-content: center;
+        display: grid;
+    }   
+    
+    .quotation-btn button{
+        padding: 30px;
+        border-radius: 7px;
+        font-weight: bolder;
+        font-size: large;
+    } 
+}

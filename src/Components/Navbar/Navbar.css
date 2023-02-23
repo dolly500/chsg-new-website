@@ -1,0 +1,132 @@
+nav{
+    height: 5rem;
+    width: 100vw;
+    display: grid;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgb(113, 99, 126);
+    cursor: pointer;
+}
+
+.nav__container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+
+
+
+.nav__toggle-btn{
+    display: none;
+}
+
+.nav__links a:hover{
+    padding: 2px;
+    border-bottom: 2.5px solid white;
+}
+
+.logo{
+    width: 10rem;
+    margin-left: 1rem;
+}
+
+.nav__links{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 2rem;
+    justify-content: center;
+}
+
+.btn__quote{
+    margin-right: 10rem;
+    padding: 10px 15px;
+    background-color: white;
+    color: #30A7DF;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.active-nav{
+    position: relative;
+}
+
+.active-nav::after{
+    content: '';
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    left: calc(50% - 0.6rem);
+    transform: rotate(45deg);
+    margin-top: 0.9rem;
+}
+
+/* Media queries for Nav */
+
+@media screen and (max-width: 1024px) {
+    .nav__toggle-btn{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: white;
+        font-size: 2.5rem;
+        margin-right: 1rem;
+    }
+    .nav__links .btn__quote{
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+    } 
+    .nav__links{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .active-nav, .active-nav::after{
+        display: none;
+    }
+    .nav__links a:hover{
+        border-bottom: none;
+    }
+
+    .nav__links li{
+        height: 4rem;
+        width: 100%;
+        box-shadow: -2rem 2rem 5rem rgba(0,0,0,0.4);
+    }
+
+    .btn__quote{
+        display: none;
+    }
+
+    .nav__links li a{
+        background-color: rgb(113, 99, 126);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1rem 5rem 1rem 3rem
+    }
+
+    .active-nav{
+        display: none;
+    }
+
+    .show__nav{
+        display: flex;
+    }
+
+    .hide__nav{
+        display: none;
+    }
+
+}

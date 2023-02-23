@@ -1,0 +1,18 @@
+.listings{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    padding: 13px;
+    justify-content: space-between;
+}
+
+.listings {
+    animation-duration: 1.6s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+    }
+  }
