@@ -14,7 +14,7 @@ export const Users = [
     },
     {
         svg: RiLightbulbFlashLine,
-        text1: "MOBILE APPLICATION DEVELOPMENT",
+        text1: "MANAGEMENT SOFTWARES",
         text2: "We deliver excellent mobile Applications be it Native or Hybrid",
     },
     {
